@@ -1,0 +1,25 @@
+name: Small improvement
+description: Suggest a focused improvement within the project scope.
+title: "idea: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What concrete problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change and how to verify it
+      description: Keep the change small and testable with synthetic data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This does not add messages, purchases, scraping, private Hinge APIs, bypassing limits or evasion.
+          required: true

@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- source: ai; ai_generated: (C) -->
+<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="local-token" content="__LOCAL_TOKEN__"><title>iPhone Like Assistant</title><link rel="stylesheet" href="/style.css"><script src="/dashboard.js" defer></script></head>
+<body><main>
+<header><div><p class="eyebrow">LOKAL PROTOTYPE · V0.2 · WINDOWS + IPHONE</p><h1>iPhone Like Assistant</h1><p>Åbn Hinge på din iPhone. Du vælger knapperne én gang; en afgrænset session gentager forløbet.</p></div><span id="connection" class="badge">Ikke forbundet</span></header>
+<div id="demo-banner" class="notice" hidden><strong>DEMO — ingen iPhone er tilsluttet, og der sendes ingen rigtige likes.</strong><p>Her afprøver du kontrolpanelet med kunstige skærme. Start uden <code>--demo</code> for den rigtige driver.</p></div>
+<div class="warning"><strong>Hinge forbyder autoswipers og kan spærre din konto.</strong> V1 omgår ikke begrænsninger. Den sender ikke beskeder eller roser og foretager ikke køb. Første test skal ske, mens du følger med.</div>
+<p id="notice" role="status" aria-live="polite">Klar til opsætning.</p>
+<section id="setup"><div class="section-head"><span class="step">01</span><div><h2>Forbind din iPhone</h2><p>Appium skal køre lokalt på port 4723. På Windows skal en signeret WebDriverAgent allerede være installeret, og RemoteXPC-tunnelen skal køre. Telefonen skal være tilsluttet via USB, betroet og i udviklertilstand.</p></div></div>
+<label>Forbindelsestype<select id="connection_mode"><option value="windows-preinstalled">Windows · installeret WebDriverAgent</option><option value="mac">Mac · Xcode</option></select></label>
+<div class="grid"><label>iPhone UDID<input id="udid" autocomplete="off" placeholder="Fra Xcode → Devices and Simulators"></label><label>Apple Team ID<input id="team_id" autocomplete="off" placeholder="10 tegn — fra din udviklersignering"></label><label>WebDriverAgent bundle-id<input id="wda_bundle_id" autocomplete="off" placeholder="Det bundle-id, du signerede i Xcode"></label><label>iOS-version (påkrævet på Windows)<input id="platform_version" placeholder="Fx 26.6"></label></div>
+<p class="muted">Windows kræver iOS 18+ og WDA bundle-id. Team ID bruges kun på Mac. Intet Apple-password skal indtastes her.</p>
+<div class="actions"><button id="connect">Forbind telefon</button><button id="disconnect" class="secondary">Afbryd</button></div></section>
+<section id="calibration"><div class="section-head"><span class="step">02</span><div><h2>Lær de rigtige knapper</h2><p>Kalibreringen bruger de faktiske knapnavne fra din app — ikke gættede koordinater.</p></div></div>
+<p id="calibration-status" class="muted">Ingen kalibrering endnu.</p>
+<button id="inspect" class="secondary">Aflæs den åbne skærm</button><p id="inspection-info" class="muted"></p>
+<div class="grid"><div class="subcard"><h3>A. På Discover-profilsiden</h3><p>Åbn Discover på telefonen. Aflæs skærmen og vælg den aktive Discover-fane samt et almindeligt hjerte.</p><label>Discover-markør<select id="marker"><option value="">Aflæs først</option></select></label><label>Almindeligt hjerte<select id="like"><option value="">Aflæs først</option></select></label><button id="save-feed" class="secondary">Gem profilside</button></div>
+<div class="subcard"><h3>B. På Send Like-skærmen</h3><p>Tryk selv på et almindeligt hjerte på iPhonen, men send ikke. Aflæs igen, vælg Send Like og gem. Luk derefter dialogen manuelt.</p><label>Send almindeligt like<select id="send"><option value="">Aflæs først</option></select></label><label class="check"><input type="checkbox" id="empty-confirmed"><span>Kommentarfeltet er helt tomt. Jeg har slettet eventuelle kladder.</span></label><button id="save-send" class="secondary">Gem send-knap</button></div></div>
+<details><summary>Se knapper fra seneste aflæsning</summary><pre id="controls">Ingen aflæsning.</pre></details>
+<p class="muted">Kan en knap ikke findes, eller skifter knapnavnene mellem profiler, stopper v1. Den gætter ikke og kræver da en lokal tilpasning.</p></section>
+<section><div class="section-head"><span class="step">03</span><div><h2>Start en afgrænset session</h2><p>Gå tilbage til Discover-profilsiden på din iPhone inden start. Lad computeren og iPhone være vågne, og brug ikke telefonen imens.</p></div></div>
+<div class="grid"><label>Maks. send-forsøg<input id="max-likes" type="number" value="5" min="1" max="25" step="1"></label><label>Maks. sekunder<input id="max-seconds" type="number" value="120" min="1" max="600" step="1"></label></div>
+<label class="check"><input id="ack" type="checkbox"><span>Jeg starter selv denne session, accepterer kontorisikoen og har kontrolleret, at det er almindelige likes uden kommentar.</span></label>
+<div class="actions"><button id="preview" class="secondary">Kontrollér uden klik</button><button id="start">Start session</button><button id="stop" class="danger">Stop nu</button></div>
+<div class="metrics"><div><span id="attempts">0</span><p>Send-forsøg</p></div><div><span id="observed">0</span><p>Nye profiler observeret</p></div><div><span id="run-status">Klar</span><p>Session</p></div></div>
+<p id="reason" aria-live="polite">Ingen session startet.</p><p class="muted">Et send-forsøg beviser ikke, at Hinge har accepteret dit like. Stop kan ikke tilbagekalde en handling, der allerede er afsendt.</p></section>
+<footer>Ingen AI-model, cloudkonto eller API-nøgle. Knapnavne og enhedsopsætning gemmes kun lokalt. Telefonintegration skal afprøves på din egen enhed.</footer>
+</main></body></html>

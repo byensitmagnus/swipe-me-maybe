@@ -1,0 +1,36 @@
+# source: ai; ai_generated: (C)
+.local/
+.tools/
+.appium/
+__pycache__/
+*.py[cod]
+*.local.json
+*.log
+*.png
+*.jpg
+*.jpeg
+*.xml
+*.ipa
+*.p12
+*.mobileprovision
+.DS_Store
+.superpowers/
+node_modules/
+.npm-cache/
+.qa/
+release/
+
+# Signing material, account state and archives never belong in source.
+*.pem
+*.key
+*.cer
+*.crt
+*.pfx
+*.p8
+*.app/
+.env
+.env.*
+*.zip
+# Only these fixture-generated images are public assets.
+!docs/assets/demo-desktop.png
+!docs/assets/demo-mobile.png
