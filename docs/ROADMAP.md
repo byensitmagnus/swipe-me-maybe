@@ -5,10 +5,10 @@ development stays open. These are the useful next steps, in dependency order.
 
 | Priority | Work | Acceptance |
 | --- | --- | --- |
-| P0 | Signed WDA + tunnel + physical acceptance | Owner verifies the full connection and one explicitly started attempt; report versions and a synthetic reproduction, no personal data |
-| P1 | English dashboard | All visible copy translated consistently; demo, calibration, preview and stop still work |
-| P1 | Explicit Windows exact-bundle-ID setting | Choice is visible, saved and round-trips without altering legacy base-ID/Mac behavior |
-| P2 | Reproducible Mac dependency setup | Document/test compatible pinned versions without changing a working local signing installation |
+| P0 | [Signed WDA + tunnel + physical acceptance (#1)](https://github.com/byensitmagnus/swipe-me-maybe/issues/1) | Owner verifies the full connection and one explicitly started attempt; report versions and a synthetic reproduction, no personal data |
+| P1 | [English dashboard (#2)](https://github.com/byensitmagnus/swipe-me-maybe/issues/2) | All visible copy translated consistently; demo, calibration, preview and stop still work |
+| P1 | [Explicit Windows exact-bundle-ID setting (#3)](https://github.com/byensitmagnus/swipe-me-maybe/issues/3) | Choice is visible, saved and round-trips without altering legacy base-ID/Mac behavior |
+| P2 | [Reproducible Mac dependency setup (#4)](https://github.com/byensitmagnus/swipe-me-maybe/issues/4) | Document/test compatible pinned versions without changing a working local signing installation |
 
 ## Already present
 

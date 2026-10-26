@@ -1,6 +1,6 @@
 # Project status
 
-Updated: 2026-10-26 · **Community handoff**
+Updated: 2026-10-26 · **Local task closed; public community handoff complete**
 
 The original local implementation task is closed at this source handoff.
 The open-source repository remains open for Matti and other contributors.
@@ -23,3 +23,9 @@ No actual Hinge session or server-confirmed like has been demonstrated.
 Personal account setup, private device state, local tool caches and signing
 material are not part of the public project. No account or credential is supplied.
 See [VERIFICATION.md](VERIFICATION.md) for evidence and its limits.
+
+Published: [public repository](https://github.com/byensitmagnus/swipe-me-maybe),
+[experimental v0.2.0 release](https://github.com/byensitmagnus/swipe-me-maybe/releases/tag/v0.2.0)
+and [four open continuation issues](https://github.com/byensitmagnus/swipe-me-maybe/issues).
+The source tree was verified against the remote commit. All six initial CI
+jobs passed. No local task server remains running; private working files are preserved.

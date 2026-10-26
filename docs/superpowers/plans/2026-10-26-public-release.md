@@ -12,9 +12,9 @@ Execution: inline, with an independent read-only release review.
 - [x] Remove personal account/machine history from public documentation.
 - [x] Run fresh synthetic tests, syntax, browser/asset and publication checks.
 - [x] Review the exact staged source candidate independently.
-- [ ] Create a public repository, push source and verify remote content and CI.
-- [ ] Publish an experimental release and create concrete continuation issues.
-- [ ] Close the local implementation task; keep the public project open.
+- [x] Create a public repository, push source and verify remote content and CI.
+- [x] Publish an experimental release and create concrete continuation issues.
+- [x] Close the local implementation task; keep the public project open.
 
 Review focus: private files accidentally staged; overstated physical readiness;
 broken clean-clone docs/assets; licensing external tools as project code;

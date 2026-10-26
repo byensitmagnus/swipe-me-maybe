@@ -13,7 +13,7 @@ live version of Hinge.
 | Headless browser acceptance with synthetic devices | Passed: preview, two cycles, calibration, stop, mobile width and zero JS exceptions |
 | Public-source privacy and link checks | Passed on 58 staged files: no forbidden/private paths, credential patterns, personal machine paths/emails or missing local links |
 | Independent source/publication review | APPROVE: exact 58-file staged candidate; privacy, licensing, docs, fixtures and workflow reviewed |
-| GitHub Actions | Workflow provided; remote execution checked after push |
+| GitHub Actions | [Six successful jobs](https://github.com/byensitmagnus/swipe-me-maybe/actions/runs/40357499789): Windows/Linux × Python 3.11, 3.13, 3.14 |
 | Actual Hinge session | **Not verified** |
 
 ## Earlier measured software evidence — 2026-10-24
@@ -48,3 +48,8 @@ See the [handoff](docs/HANDOFF.md) and [Windows guide](docs/WINDOWS.md).
 A clean export of the staged source started the offline demo without .local,
 Appium packages or installed drivers; zero device sessions. Bash setup/start
 script syntax also passed. Only synthetic documentation screenshots were generated.
+
+Publication verified: public visibility, MIT recognized by GitHub, main branch,
+remote tree matches the reviewed commit, non-draft experimental v0.2.0 release,
+four open continuation issues and private vulnerability reporting enabled.
+The repository remains unarchived so contributors can continue.

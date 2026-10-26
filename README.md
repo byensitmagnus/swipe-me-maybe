@@ -6,6 +6,10 @@
   Python 3.11+ · Windows + iPhone · Offline demo · <a href="LICENSE">MIT</a>
 </p>
 <p align="center">
+  <a href="https://github.com/byensitmagnus/swipe-me-maybe/actions/runs/40357499789"><img src="https://github.com/byensitmagnus/swipe-me-maybe/workflows/Python%20checks/badge.svg" alt="Windows and Linux Python checks"></a>
+  · <a href="https://github.com/byensitmagnus/swipe-me-maybe/releases/tag/v0.2.0">v0.2.0 · Experimental release</a>
+</p>
+<p align="center">
   <a href="#try-the-demo">Try the demo</a> ·
   <a href="docs/HANDOFF.md">Matti, start here</a> ·
   <a href="docs/ROADMAP.md">What's unfinished</a> ·
